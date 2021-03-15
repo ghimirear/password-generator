@@ -1,4 +1,4 @@
-# homework-3
+# password-generator
 ## first javascript homework.
 I was excited for the very first javascript homework.
 
