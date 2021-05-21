@@ -12,7 +12,7 @@ Technologies utilized
 - HTML & CSS
 - Javascript 
 # Usage 
-Clone the repo on dexktop and open the index.js file in browser.
+Clone the repo on dexktop and open the index.html file in browser.
 # Deployment
 
 [password-generator app](https://ghimirear.github.io/password-generator/)
