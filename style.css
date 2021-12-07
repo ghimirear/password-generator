@@ -52,6 +52,9 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
+.card{
+  box-shadow: 2px 2px 2px 2px hsl(234, 71%, 49%, 0.3);
+}
 
 .card-body {
   min-height: 100px;
@@ -89,6 +92,7 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+
 }
 .btn:hover{
   color: hsl(0, 0%, 100%);
