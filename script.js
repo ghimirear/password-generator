@@ -6,16 +6,13 @@ generateBtn.addEventListener("click", writePassword);
 
 //setting up  global variables.
 var numbersStrings = "1234567890".split("");
-//console.log(numbersStrings);
 var lowerString = "abcdefghijklmnopqrstuvwxyz".split("");
-//console.log(lowerString);
 
 var upperString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-//console.log(upperString);
 
 var specialString = "!@#$^&*(><,)_%-:/;+=~`".split("");
-//console.log(specialString);
 
+// function to prompt the user with a series of questions. 
 function generatePassword(){ 
   
   var passLength = prompt("please enter the length of your password between 8 nad 128");
@@ -35,7 +32,7 @@ function generatePassword(){
    
   //if above conditions  not chosen then 
   while (numbers === false && special === false && lower === false && upper === false){
-    alert("you need to selectatleast one optios!!!!!!");
+    alert("you need to select at least one optios!!!!!!");
 
     numbers = confirm("do you want numbers in your password?");
     special = confirm( "do you want specials characters in your password?");
@@ -57,14 +54,12 @@ function generatePassword(){
   if ( upper === true){ 
     userOptions = userOptions.concat(upperString);
   }
-  console.log(userOptions);
 
   //creating an empty string to store generated password naming generatedPassword.
   var generatedPassword ="";
   // creating an for loop to generate random characters from user choices.
     for ( var i =0; i < passLength; i++){
     generatedPassword = generatedPassword + userOptions[Math.floor(Math.random() * userOptions.length)];
-    console.log(generatedPassword);
   } 
 return generatedPassword;
 } //setting up the password to display.
